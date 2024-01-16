@@ -54,7 +54,7 @@ ROOT_URLCONF = "FissHunt.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [], # templates directory to be configured
+        "DIRS": [BASE_DIR / "fisshuntreact/build"], # templates directory to be configured
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -123,7 +123,7 @@ STATIC_URL = "static/"
 
 # static directory to be configured
 STATICFILES_DIRS = [
-    BASE_DIR / "static"
+    BASE_DIR / "fisshuntreact/build/static"
 ] 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
