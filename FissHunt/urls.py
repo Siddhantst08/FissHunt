@@ -20,5 +20,6 @@ from FissHunt import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", views.index, name="home")
+    path("", views.index, name="home"),
+    path("login", views.loginUser, name = 'login')
 ]
