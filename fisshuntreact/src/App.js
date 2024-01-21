@@ -40,5 +40,6 @@ const appRouter = createBrowserRouter([
     errorElement: <Error />,
   },
 ]);
+
 export default appRouter;
 

@@ -1,0 +1,1 @@
+export const LOGO_URL = "https://app.gemoo.com/share/image-annotation/606701193078075392?codeId=MpKzO5n0N0mE2&origin=imageurlgenerator&card=606701190456676352"
