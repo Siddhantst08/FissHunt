@@ -25,19 +25,19 @@ SECRET_KEY = "django-insecure-183uq8y&v2!631uquj2^*qd%)b%f!lrwo1@31s1#&**_h%w#n5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    "DjangoAPP.apps.DjangoappConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "Backend.apps.BackendConfig"
 ]
 
 MIDDLEWARE = [
@@ -124,7 +124,9 @@ STATIC_URL = "static/"
 
 # static directory to be configured
 STATICFILES_DIRS = [
-    BASE_DIR / "fisshuntreact/build/static"
+    BASE_DIR / "fisshuntreact/build/static",
+    BASE_DIR / "fisshuntreact/build/"
+
 ] 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
