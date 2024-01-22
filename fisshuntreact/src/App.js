@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Error from './components/Error';
 import Body from './components/Body';
 import Login from './components/Login';
+import SignUp from './components/SignUp';
 
 
 
@@ -20,7 +21,7 @@ function App() {
 }
 const appRouter = createBrowserRouter([
   {
-    path: "/",
+    path: "/exchange",
     element: <App />,
     children: [
       {
@@ -28,9 +29,14 @@ const appRouter = createBrowserRouter([
         element: <Body />,
       },
       {
-        path: "/login",
+        path: "/exchange/login",
         element: <Login />,
       },
+
+      {
+        path: "/exchange/SignUp",
+        element: <SignUp />
+      }
       // {
       //   path: "/contact",
       //   element: <Contact />,
