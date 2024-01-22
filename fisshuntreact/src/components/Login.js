@@ -3,8 +3,8 @@ const Login = () => {
         <div className="border w-[50rem] h-[25rem]">
             <form className='form m-3' method="post" action="/login">
                 <div className="m-3 p-3">
-                    <label htmlFor="email" className="font-medium ">Email address : </label>
-                    <input type="email" className="border border-solid border-black p-2 rounded-lg" id="email" name="email" aria-describedby="emailHelp" />
+                    <label htmlFor="email" className="font-medium ">Username : </label>
+                    <input type="text" className="border border-solid border-black p-2 rounded-lg" id="email" name="username" aria-describedby="emailHelp" />
 
                 </div>
                 <div className="m-3 p-3">
