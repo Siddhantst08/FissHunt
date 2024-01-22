@@ -7,7 +7,6 @@ const Login = () => {
             <div className="content-center mx-8">
                 <form className='form m-3' method="post" action="/login">
                     <DjangoCSRFToken />
-
                     <div className="m-3 p-3">
                         <label htmlFor="email" className="font-medium  ">UserName : </label>
                         <input type="email" className="border border-solid  p-2 w-[300px] mx-7" id="email" placeholder="UserName" name="email" aria-describedby="emailHelp" />
