@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Contact = () => {
     return (
         <div>
@@ -49,6 +48,7 @@ const Contact = () => {
                     </form>
                 </section>
             </div>
+
 
         </div>
     )
