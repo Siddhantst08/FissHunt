@@ -13,8 +13,8 @@ const Header = () => {
 
                 <ul className="flex p-4 m-4 font-bold text-xl rounded-md ">
                     <li className="px-2  hover:underline cursor-pointer"><Link to="/exchange">EXCHANGE</Link></li>
-                    <li className="px-2  hover:underline cursor-pointer"><Link to="/exchange/login">LOGIN /SIGN UP</Link></li>
-                    <li className="px-2  hover:underline cursor-pointer">CONTACT US</li>
+                    <li className="px-2  hover:underline cursor-pointer"><Link to="/login">LOGIN /SIGN UP</Link></li>
+                    <li className="px-2  hover:underline cursor-pointer"><Link to="/contact">CONTACT US</Link></li>
 
                     <button className="login-btn"></button>
                     <li className="px-4 font-bold hover:underline"></li>

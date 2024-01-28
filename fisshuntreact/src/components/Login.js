@@ -24,7 +24,7 @@ const Login = () => {
             <div className="mx-8">
                 <label className="m-4 ">New to FissHunt ?</label>
                 <button className="bg-blue-200 font-medium rounded m-2 p-2 border-black hover:bg-blue-400">
-                    <Link to="/exchange/SignUp">Create new account</Link></button>
+                    <Link to="/SignUp">Create new account</Link></button>
             </div>
         </div >
     )

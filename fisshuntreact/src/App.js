@@ -7,6 +7,7 @@ import Error from './components/Error';
 import Body from './components/Body';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import Contact from './components/Contact';
 
 
 
@@ -21,7 +22,7 @@ function App() {
 }
 const appRouter = createBrowserRouter([
   {
-    path: "/exchange",
+    path: "/",
     element: <App />,
     children: [
       {
@@ -29,13 +30,17 @@ const appRouter = createBrowserRouter([
         element: <Body />,
       },
       {
-        path: "/exchange/login",
+        path: "/login",
         element: <Login />,
       },
 
       {
-        path: "/exchange/SignUp",
+        path: "/signUp",
         element: <SignUp />
+      },
+      {
+        path: "/contact",
+        element: <Contact />
       }
       // {
       //   path: "/contact",

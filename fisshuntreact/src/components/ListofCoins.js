@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 
-
-
 const ListofCoins = (data) => {
-    const { iso, name, change, ohlc, circulatingSupply, marketCap, icons } = data.data;
+    const { iso, name, change, ohlc, icons } = data.data;
     const [color, setcolor] = useState();
     const [border, setborder] = useState();
     const [bgpercent, setBgPercent] = useState();
@@ -27,8 +25,9 @@ const ListofCoins = (data) => {
             <p className="font-bold p-1 text-2xl">{name}</p>
             <span className="font-bold p-1">{iso}</span><span className="space-x-2 font-md"> 24H</span>
             <p className={`w-16 font-bold text-center rounded-md float-right text-white ${bgpercent}`}>{change?.percent.toFixed(2)}%</p>
-
-
+            <canvas id="goodCanvas1" width="400" height="100" aria-label="Hello ARIA World" role="img">
+                <p className="space-x-2 font-md text-black">Hello Fallback World</p>
+            </canvas>
         </div>
     )
 }

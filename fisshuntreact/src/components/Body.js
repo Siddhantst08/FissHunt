@@ -8,10 +8,10 @@ const Body = () => {
     }, []);
 
     const fetchdata = async () => {
-        const data = await fetch("https://www.coindesk.com/pf/api/v3/content/fetch/arc-price-pages?query=%7B%7D&d=326&_website=coindesk");
+        const data = await fetch("https://www.coindesk.com/pf/api/v3/content/fetch/arc-price-pages?query=%7B%7D&d=328&_website=coindesk");
         const resdata = await data.json();
-        console.log(resdata);
-        console.log(resdata?.data);
+        // console.log(resdata);
+        // console.log(resdata?.data);
         setListOfCrypto(Object.values(resdata.prices));
     };
 
